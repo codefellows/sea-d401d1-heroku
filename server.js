@@ -25,5 +25,5 @@ app.get('*', (req, res) => {
   index.pipe(res);
 });
 
-let port = process.env.PORT || 3000;
+var port = process.env.PORT || 3000;
 app.listen(port, () => console.log('server up on port: ' + port));
