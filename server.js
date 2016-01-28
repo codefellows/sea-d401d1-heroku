@@ -6,7 +6,7 @@ const fs = require('fs');
 mongoose.connect(process.env.MONGOLAB_URI);
 console.log('shhhhhh, it\'s a secret:' + process.env.APP_SECRET);
 
-var Message = mongoose.model('Message', new Mongoose.Schema({
+var Message = mongoose.model('Message', new mongoose.Schema({
   msg: String
 }));
 
